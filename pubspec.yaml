@@ -1,0 +1,33 @@
+name: montaj
+description: Montaj video editor
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  video_player: ^2.9.5
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
+  ffmpeg_kit_flutter_new_video: ^2.5.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # تم إضافة مكتبة توليد الأيقونات هنا
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# إعدادات الأيقونة الجديدة لمنع خطأ البناء
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
